@@ -6,9 +6,7 @@ const healthWorkerSchema = new Schema({
   workerId: { type: String, required: true, unique: true },
   village: { type: String, required: true },
   phoneNumber: { type: String, required: true },
-  password: { type: String, required: true },
 });
 
 const HealthWorker = mongoose.model("HealthWorker", healthWorkerSchema);
-
 export default HealthWorker;
